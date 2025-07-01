@@ -18,6 +18,16 @@ output "cache-redis" {
   value = azurerm_redis_cache.cache.name
 }
 
+output "cache-redis-hostname" {
+  description = "dns"
+  value = azurerm_redis_cache.cache.hostname
+}
+
+output "cache-redis-port" {
+  description = "dns"
+  value = azurerm_redis_cache.cache.port
+}
+
 output "queue-storage" {
   description = "storage for queues"
   value = azurerm_storage_account.storage.name
